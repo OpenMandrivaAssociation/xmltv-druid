@@ -10,6 +10,7 @@ Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
 URL: http://gshowtv.sourceforge.net/xmltv-druid.html
 License: GPL
 Group: Graphical desktop/GNOME
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
 #BuildRequires: perl-Gnome2
 #BuildRequires: perl-XML-Simple
