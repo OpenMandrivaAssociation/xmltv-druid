@@ -1,6 +1,6 @@
 %define name xmltv-druid
 %define version 0.4.0
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: %{name}
 Summary: Xmltv-druid - A Gnome wizard to configure xmltv grabber jobs
