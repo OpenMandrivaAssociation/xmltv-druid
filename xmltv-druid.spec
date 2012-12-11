@@ -66,3 +66,33 @@ rm -rf %{buildroot}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}*
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.4.0-5mdv2010.0
++ Revision: 435154
+- rebuild
+
+* Sun Aug 03 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.4.0-4mdv2009.0
++ Revision: 262466
+- rebuild
+
+* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.4.0-3mdv2009.0
++ Revision: 257199
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 11 2007 Guillaume Bedot <littletux@mandriva.org> 0.4.0-1mdv2008.1
++ Revision: 117288
+- import xmltv-druid
+
+
+* Tue Dec 11 2007 Guillaume Bedot <littletux@mandriva.org> 0.4.0-1mdv2008.1
+- First package of xmltv-druid for Mandriva Linux
+
