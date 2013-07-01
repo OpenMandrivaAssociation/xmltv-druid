@@ -3,7 +3,7 @@
 %define release %mkrel 5
 
 Name: %{name}
-Summary: Xmltv-druid - A Gnome wizard to configure xmltv grabber jobs
+Summary: - A Gnome wizard to configure xmltv grabber jobs
 Version: %{version}
 Release: %{release}
 Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
