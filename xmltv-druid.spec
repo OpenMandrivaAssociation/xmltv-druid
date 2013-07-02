@@ -1,16 +1,11 @@
-%define name xmltv-druid
-%define version 0.4.0
-%define release %mkrel 5
-
-Name: %{name}
-Summary: - A Gnome wizard to configure xmltv grabber jobs
-Version: %{version}
-Release: %{release}
+Name:    xmltv-druid
+Summary: A Gnome wizard to configure xmltv grabber jobs
+Version: 0.4.0
+Release: 6
 Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
 URL: http://gshowtv.sourceforge.net/xmltv-druid.html
 License: GPL
 Group: Graphical desktop/GNOME
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
 #BuildRequires: perl-Gnome2
 #BuildRequires: perl-XML-Simple
@@ -35,7 +30,6 @@ This program is designed to ease this.
 %make
 										
 %install
-rm -rf %{buildroot}
 %makeinstall PREFIX=%{buildroot}%{_prefix}
 
 desktop-file-install --vendor="" \
@@ -45,21 +39,9 @@ desktop-file-install --vendor="" \
   --dir %{buildroot}%{_datadir}/applications/ \
   %{buildroot}%{_datadir}/applications/*
 
-%if %mdkversion < 200900
-%post
-%{update_menus}
-%endif
-
-%if %mdkversion < 200900
-%postun
-%{clean_menus}
-%endif
-
 %clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc AUTHORS copyright README
 %{_bindir}/%{name}
 #%{_datadir}/%{name}
