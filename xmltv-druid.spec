@@ -1,14 +1,13 @@
 Name:    xmltv-druid
 Summary: A Gnome wizard to configure xmltv grabber jobs
 Version: 0.4.0
-Release: 6
+Release: 7
 Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
+Patch1: xmltv-druid-0.4.0-pod.patch
 URL: http://gshowtv.sourceforge.net/xmltv-druid.html
 License: GPL
 Group: Graphical desktop/GNOME
 BuildArch: noarch
-#BuildRequires: perl-Gnome2
-#BuildRequires: perl-XML-Simple
 BuildRequires: desktop-file-utils
 Requires: xmltv-grabbers
 
@@ -25,6 +24,7 @@ This program is designed to ease this.
 
 %prep
 %setup -q
+%patch1 -p1
 
 %build
 %make

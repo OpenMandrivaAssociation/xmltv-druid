@@ -1,0 +1,12 @@
+diff -Naur xmltv-druid-0.4.0.orig/xmltv-druid xmltv-druid-0.4.0/xmltv-druid
+--- xmltv-druid-0.4.0.orig/xmltv-druid	2014-08-28 04:28:08.278705104 -0400
++++ xmltv-druid-0.4.0/xmltv-druid	2014-08-28 04:28:59.928708309 -0400
+@@ -51,6 +51,8 @@
+ 
+ =item None known
+ 
++=back
++
+ =head1 AUTHOR
+ 
+ Petri Vakevainen <Petri.Vakevainen@iki.fi>
