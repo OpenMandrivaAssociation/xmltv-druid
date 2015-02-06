@@ -1,7 +1,7 @@
 Name:    xmltv-druid
 Summary: A Gnome wizard to configure xmltv grabber jobs
 Version: 0.4.0
-Release: 7
+Release: 8
 Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
 Patch1: xmltv-druid-0.4.0-pod.patch
 URL: http://gshowtv.sourceforge.net/xmltv-druid.html
