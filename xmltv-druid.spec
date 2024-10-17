@@ -4,7 +4,7 @@ Version: 0.4.0
 Release: 8
 Source: http://downloads.sourceforge.net/gshowtv/%{name}-%{version}.tar.gz
 Patch1: xmltv-druid-0.4.0-pod.patch
-URL: http://gshowtv.sourceforge.net/xmltv-druid.html
+URL: https://gshowtv.sourceforge.net/xmltv-druid.html
 License: GPL
 Group: Graphical desktop/GNOME
 BuildArch: noarch
