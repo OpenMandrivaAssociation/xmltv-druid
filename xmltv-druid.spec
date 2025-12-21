@@ -8,6 +8,7 @@ URL: https://gshowtv.sourceforge.net/xmltv-druid.html
 License: GPL
 Group: Graphical desktop/GNOME
 BuildArch: noarch
+BuildRequires:	make
 BuildRequires: desktop-file-utils
 Requires: xmltv-grabbers
 
